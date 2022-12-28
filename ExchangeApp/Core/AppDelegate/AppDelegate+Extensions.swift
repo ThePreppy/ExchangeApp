@@ -9,9 +9,12 @@ import Foundation
 
 extension AppDelegate {
     
-    func injectServices() {
+    func configureContainer() {
         let navigationService = NavigationService()
         ServiceLocator.shared.add(service: navigationService)
+        
+        let currenciesProvider = CurrenciesProvider()
+        ServiceLocator.shared.add(service: currenciesProvider)
     }
     
 }

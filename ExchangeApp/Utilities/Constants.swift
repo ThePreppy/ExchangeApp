@@ -13,4 +13,14 @@ enum Constants {
         
     }
     
+    enum File {
+        
+        enum Name {
+            static let currencies: String = "Currencies"
+        }
+        
+        static let json: String = "json"
+        
+    }
+    
 }
