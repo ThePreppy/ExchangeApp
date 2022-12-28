@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             return
         }
         
-        let navigationService = Services.navigationService
+        let navigationService = Container.navigationService
         window = navigationService.setup(with: windowScene)
         navigationService.start()
     }

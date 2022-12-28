@@ -11,5 +11,6 @@ protocol NavigationServiceProtocol {
     
     func start()
     func setup(with windowScene: UIWindowScene) -> UIWindow?
+    func showMain()
     
 }
