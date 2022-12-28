@@ -9,4 +9,14 @@ import Foundation
 
 class EAViewController: XIBViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        setupComponents()
+    }
+    
+    func setupComponents() {
+        view.backgroundColor = AppTheme.systemWhite
+    }
+    
 }

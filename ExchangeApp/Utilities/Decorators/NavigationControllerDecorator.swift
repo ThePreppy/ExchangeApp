@@ -12,7 +12,7 @@ struct NavigationControllerDecorator {
     static func decorate(_ navigationController: UINavigationController) {
         let navigationBar = navigationController.navigationBar
         let appearance = navigationBar.standardAppearance
-        let titleColor: UIColor = .white
+        let titleColor: UIColor = AppTheme.white
         
         appearance.backgroundColor = AppTheme.primary
         appearance.largeTitleTextAttributes = [.foregroundColor : titleColor]

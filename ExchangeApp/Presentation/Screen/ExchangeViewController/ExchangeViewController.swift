@@ -8,10 +8,19 @@
 import UIKit
 
 class ExchangeViewController: EAViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    
+    @IBOutlet private weak var calculateButton: PrimaryButton!
+    
+    override func setupComponents() {
+        super.setupComponents()
+        
+        setupUI()
+    }
+    
+    private func setupUI() {
+        navigationItem.titleKey = .exchange_navigation_title
+        
+        calculateButton.titleKey = .exchange_calculate
     }
 
 }
