@@ -31,6 +31,13 @@
 		1F956426295CDFA00028A90A /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F956425295CDF9F0028A90A /* AppTheme.swift */; };
 		1F95642A295CE39F0028A90A /* ExchangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F956428295CE39F0028A90A /* ExchangeViewController.swift */; };
 		1F95642B295CE39F0028A90A /* ExchangeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F956429295CE39F0028A90A /* ExchangeViewController.xib */; };
+		1F95642E295CE4C90028A90A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F956430295CE4C90028A90A /* Localizable.strings */; };
+		1F956432295CE5160028A90A /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F956431295CE5160028A90A /* Localizable.swift */; };
+		1F956435295CE5D50028A90A /* UINavigationItem+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F956434295CE5D50028A90A /* UINavigationItem+Localizable.swift */; };
+		1F956437295CE6760028A90A /* EAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F956436295CE6760028A90A /* EAButton.swift */; };
+		1F95643A295CE6F10028A90A /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F956439295CE6F10028A90A /* PrimaryButton.swift */; };
+		1F95643C295CE7BD0028A90A /* UIButton+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F95643B295CE7BD0028A90A /* UIButton+Localizable.swift */; };
+		1F95643E295CEF2E0028A90A /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F95643D295CEF2E0028A90A /* UIView+Extensions.swift */; };
 		1FB17E24295CC5DE00FC5571 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB17E23295CC5DE00FC5571 /* AppDelegate.swift */; };
 		1FB17E26295CC5DE00FC5571 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB17E25295CC5DE00FC5571 /* SceneDelegate.swift */; };
 		1FB17E2D295CC5E200FC5571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB17E2C295CC5E200FC5571 /* Assets.xcassets */; };
@@ -82,6 +89,13 @@
 		1F956425295CDF9F0028A90A /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		1F956428295CE39F0028A90A /* ExchangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeViewController.swift; sourceTree = "<group>"; };
 		1F956429295CE39F0028A90A /* ExchangeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangeViewController.xib; sourceTree = "<group>"; };
+		1F95642F295CE4C90028A90A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1F956431295CE5160028A90A /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		1F956434295CE5D50028A90A /* UINavigationItem+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Localizable.swift"; sourceTree = "<group>"; };
+		1F956436295CE6760028A90A /* EAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAButton.swift; sourceTree = "<group>"; };
+		1F956439295CE6F10028A90A /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		1F95643B295CE7BD0028A90A /* UIButton+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Localizable.swift"; sourceTree = "<group>"; };
+		1F95643D295CEF2E0028A90A /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		1FB17E20295CC5DE00FC5571 /* ExchangeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB17E23295CC5DE00FC5571 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FB17E25295CC5DE00FC5571 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +149,7 @@
 			children = (
 				1FB17E2C295CC5E200FC5571 /* Assets.xcassets */,
 				1F9563F9295CCFE40028A90A /* Currencies.json */,
+				1F956430295CE4C90028A90A /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -142,6 +157,7 @@
 		1F9563E4295CC7BD0028A90A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				1F956438295CE6E20028A90A /* View */,
 				1F95640F295CD9620028A90A /* Screen */,
 				1FB17E2E295CC5E200FC5571 /* LaunchScreen.storyboard */,
 			);
@@ -160,6 +176,7 @@
 				1F956402295CD1EA0028A90A /* Logger.swift */,
 				1F95640A295CD5200028A90A /* Domainable.swift */,
 				1F956425295CDF9F0028A90A /* AppTheme.swift */,
+				1F956431295CE5160028A90A /* Localizable.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -227,8 +244,10 @@
 		1F95640C295CD62D0028A90A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1F956433295CE5B50028A90A /* Localizable */,
 				1F95640D295CD63C0028A90A /* Closure+Extensions.swift */,
 				1F95641E295CDD440028A90A /* TimeInterval+Extensions.swift */,
+				1F95643D295CEF2E0028A90A /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -257,6 +276,7 @@
 				1F95641A295CDA4B0028A90A /* XIBViewController.swift */,
 				1F95641C295CDB090028A90A /* EAViewController.swift */,
 				1F956420295CDF290028A90A /* EANavigationController.swift */,
+				1F956436295CE6760028A90A /* EAButton.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -276,6 +296,23 @@
 				1F956429295CE39F0028A90A /* ExchangeViewController.xib */,
 			);
 			path = ExchangeViewController;
+			sourceTree = "<group>";
+		};
+		1F956433295CE5B50028A90A /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				1F956434295CE5D50028A90A /* UINavigationItem+Localizable.swift */,
+				1F95643B295CE7BD0028A90A /* UIButton+Localizable.swift */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		1F956438295CE6E20028A90A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F956439295CE6F10028A90A /* PrimaryButton.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		1FB17E17295CC5DE00FC5571 = {
@@ -434,6 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FB17E30295CC5E200FC5571 /* LaunchScreen.storyboard in Resources */,
+				1F95642E295CE4C90028A90A /* Localizable.strings in Resources */,
 				1FB17E2D295CC5E200FC5571 /* Assets.xcassets in Resources */,
 				1F9563FA295CCFE40028A90A /* Currencies.json in Resources */,
 				1F95642B295CE39F0028A90A /* ExchangeViewController.xib in Resources */,
@@ -470,8 +508,10 @@
 				1F956421295CDF290028A90A /* EANavigationController.swift in Sources */,
 				1FB17E26295CC5DE00FC5571 /* SceneDelegate.swift in Sources */,
 				1F95641F295CDD440028A90A /* TimeInterval+Extensions.swift in Sources */,
+				1F95643C295CE7BD0028A90A /* UIButton+Localizable.swift in Sources */,
 				1F95641D295CDB090028A90A /* EAViewController.swift in Sources */,
 				1F956406295CD43C0028A90A /* CurrenciesProviderProtocol.swift in Sources */,
+				1F956435295CE5D50028A90A /* UINavigationItem+Localizable.swift in Sources */,
 				1F9563F3295CC9B30028A90A /* Container.swift in Sources */,
 				1F9563EF295CC91E0028A90A /* NavigationServiceProtocol.swift in Sources */,
 				1F956403295CD1EA0028A90A /* Logger.swift in Sources */,
@@ -479,11 +519,15 @@
 				1F956426295CDFA00028A90A /* AppTheme.swift in Sources */,
 				1F95641B295CDA4B0028A90A /* XIBViewController.swift in Sources */,
 				1F95640E295CD63C0028A90A /* Closure+Extensions.swift in Sources */,
+				1F95643A295CE6F10028A90A /* PrimaryButton.swift in Sources */,
 				1F9563E8295CC8000028A90A /* Constants.swift in Sources */,
 				1F9563F5295CCA9E0028A90A /* AppDelegate+Extensions.swift in Sources */,
 				1F9563FC295CD0340028A90A /* CurrenciesProvider.swift in Sources */,
+				1F95643E295CEF2E0028A90A /* UIView+Extensions.swift in Sources */,
 				1F95642A295CE39F0028A90A /* ExchangeViewController.swift in Sources */,
 				1F95640B295CD5200028A90A /* Domainable.swift in Sources */,
+				1F956437295CE6760028A90A /* EAButton.swift in Sources */,
+				1F956432295CE5160028A90A /* Localizable.swift in Sources */,
 				1F956424295CDF5D0028A90A /* NavigationControllerDecorator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,6 +565,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1F956430295CE4C90028A90A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F95642F295CE4C90028A90A /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		1FB17E2E295CC5E200FC5571 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
