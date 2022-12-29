@@ -94,7 +94,7 @@ class ExchangePresenter: ExchangePresenterInput {
         interactor.fetchCurrencyRate(
             sourceCode: sourceCurrency.value.code ?? "",
             targetCode: targetCurrency.value.code ?? "",
-            amount: String(currencyAmount)
+            amount: currencyAmount
         ) { [weak self] in
             self?.loader?.stopLoading()
             

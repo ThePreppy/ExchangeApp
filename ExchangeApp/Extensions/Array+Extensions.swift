@@ -10,17 +10,17 @@ import Foundation
 extension Array where Element: Equatable {
     
     func removingDuplicates() -> [Element] {
-        var array: [Element] = []
+        var uniqueElements: [Element] = []
         
         for value in self {
-            guard !array.contains(value) else {
+            guard !uniqueElements.contains(value) else {
                 continue
             }
             
-            array.append(value)
+            uniqueElements.append(value)
         }
         
-        return array
+        return uniqueElements
     }
     
 }

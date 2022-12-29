@@ -24,4 +24,10 @@ enum Constants {
         static let plist: String = "plist"
     }
     
+    enum Cache {
+        
+        static let name: String = "ExchangeApp"
+        
+    }
+    
 }

@@ -18,6 +18,13 @@
 		1F3DC32E295D992F0003318C /* AmountInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DC32C295D992F0003318C /* AmountInputView.swift */; };
 		1F3DC32F295D992F0003318C /* AmountInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DC32D295D992F0003318C /* AmountInputView.xib */; };
 		1F5E4A65295E166E00683086 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5E4A64295E166E00683086 /* Array+Extensions.swift */; };
+		1F5E4A67295E1CD600683086 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5E4A66295E1CD600683086 /* Cache.swift */; };
+		1F5E4A6A295E1CEF00683086 /* CurrencyCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5E4A69295E1CEF00683086 /* CurrencyCache.swift */; };
+		1F5E4A6C295E1D1800683086 /* CurrencyCacheProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5E4A6B295E1D1800683086 /* CurrencyCacheProtocol.swift */; };
+		1F5E4A6F295E1E2C00683086 /* ExchangeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5E4A6E295E1E2C00683086 /* ExchangeRepository.swift */; };
+		1F5E4A71295E1E3700683086 /* ExchangeRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5E4A70295E1E3700683086 /* ExchangeRepositoryProtocol.swift */; };
+		1F5E4A73295E210E00683086 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5E4A72295E210E00683086 /* Time.swift */; };
+		1F5E4A76295E57C700683086 /* CacheDiskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5E4A75295E57C700683086 /* CacheDiskManager.swift */; };
 		1F629397295CF63C003FFA2C /* EAControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629396295CF63C003FFA2C /* EAControl.swift */; };
 		1F62939D295CFEED003FFA2C /* CurrencySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F62939B295CFEED003FFA2C /* CurrencySelectionView.swift */; };
 		1F62939E295CFEED003FFA2C /* CurrencySelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F62939C295CFEED003FFA2C /* CurrencySelectionView.xib */; };
@@ -142,6 +149,13 @@
 		1F3DC32C295D992F0003318C /* AmountInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountInputView.swift; sourceTree = "<group>"; };
 		1F3DC32D295D992F0003318C /* AmountInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmountInputView.xib; sourceTree = "<group>"; };
 		1F5E4A64295E166E00683086 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		1F5E4A66295E1CD600683086 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		1F5E4A69295E1CEF00683086 /* CurrencyCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCache.swift; sourceTree = "<group>"; };
+		1F5E4A6B295E1D1800683086 /* CurrencyCacheProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCacheProtocol.swift; sourceTree = "<group>"; };
+		1F5E4A6E295E1E2C00683086 /* ExchangeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRepository.swift; sourceTree = "<group>"; };
+		1F5E4A70295E1E3700683086 /* ExchangeRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRepositoryProtocol.swift; sourceTree = "<group>"; };
+		1F5E4A72295E210E00683086 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		1F5E4A75295E57C700683086 /* CacheDiskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheDiskManager.swift; sourceTree = "<group>"; };
 		1F629396295CF63C003FFA2C /* EAControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAControl.swift; sourceTree = "<group>"; };
 		1F62939B295CFEED003FFA2C /* CurrencySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectionView.swift; sourceTree = "<group>"; };
 		1F62939C295CFEED003FFA2C /* CurrencySelectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencySelectionView.xib; sourceTree = "<group>"; };
@@ -292,6 +306,33 @@
 			path = AmountInputView;
 			sourceTree = "<group>";
 		};
+		1F5E4A68295E1CE200683086 /* CurrencyCache */ = {
+			isa = PBXGroup;
+			children = (
+				1F5E4A69295E1CEF00683086 /* CurrencyCache.swift */,
+				1F5E4A6B295E1D1800683086 /* CurrencyCacheProtocol.swift */,
+			);
+			path = CurrencyCache;
+			sourceTree = "<group>";
+		};
+		1F5E4A6D295E1E1A00683086 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1F5E4A74295E57B100683086 /* ExhangeRepository */,
+				1F5E4A75295E57C700683086 /* CacheDiskManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		1F5E4A74295E57B100683086 /* ExhangeRepository */ = {
+			isa = PBXGroup;
+			children = (
+				1F5E4A6E295E1E2C00683086 /* ExchangeRepository.swift */,
+				1F5E4A70295E1E3700683086 /* ExchangeRepositoryProtocol.swift */,
+			);
+			path = ExhangeRepository;
+			sourceTree = "<group>";
+		};
 		1F62939A295CFEC6003FFA2C /* CurrencySelectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +392,8 @@
 				1FB4EAD6295DD3D100318D2C /* ErrorRepresentable.swift */,
 				1FB4EAD8295DD42800318D2C /* AlertBuilder.swift */,
 				1FB4EAE9295DE1F100318D2C /* Loadable.swift */,
+				1F5E4A66295E1CD600683086 /* Cache.swift */,
+				1F5E4A72295E210E00683086 /* Time.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -358,6 +401,7 @@
 		1F9563EB295CC9040028A90A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				1F5E4A68295E1CE200683086 /* CurrencyCache */,
 				1FB4EAAE295DB81500318D2C /* NetworkService */,
 				1F9563F1295CC9A20028A90A /* NavigationService */,
 			);
@@ -547,6 +591,7 @@
 			children = (
 				1F9563E2295CC7A30028A90A /* Core */,
 				1F9563EB295CC9040028A90A /* Services */,
+				1F5E4A6D295E1E1A00683086 /* Managers */,
 				1F9563E6295CC7E80028A90A /* Utilities */,
 				1F95640C295CD62D0028A90A /* Extensions */,
 				1F9563FD295CD0F20028A90A /* Model */,
@@ -819,7 +864,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F5E4A6F295E1E2C00683086 /* ExchangeRepository.swift in Sources */,
+				1F5E4A76295E57C700683086 /* CacheDiskManager.swift in Sources */,
 				1FB4EAA5295DA1EE00318D2C /* ExchangeModuleBuilder.swift in Sources */,
+				1F5E4A71295E1E3700683086 /* ExchangeRepositoryProtocol.swift in Sources */,
 				1F9563ED295CC9150028A90A /* NavigationService.swift in Sources */,
 				1FB4EAF6295DEC2300318D2C /* ExchangeTimerView.swift in Sources */,
 				1F9563EA295CC8CA0028A90A /* ServiceLocator.swift in Sources */,
@@ -847,6 +895,7 @@
 				1FB4EAC4295DB82200318D2C /* NetworkServiceProtocol.swift in Sources */,
 				1F956421295CDF290028A90A /* EANavigationController.swift in Sources */,
 				1FB17E26295CC5DE00FC5571 /* SceneDelegate.swift in Sources */,
+				1F5E4A67295E1CD600683086 /* Cache.swift in Sources */,
 				1FB4EAAD295DA7BD00318D2C /* UserDefined.swift in Sources */,
 				1F95641F295CDD440028A90A /* TimeInterval+Extensions.swift in Sources */,
 				1F3DC326295D23B40003318C /* Collection+Extensions.swift in Sources */,
@@ -855,9 +904,12 @@
 				1FB4EAC2295DB82200318D2C /* NetworkError.swift in Sources */,
 				1FB4EA97295D9AFF00318D2C /* DoneToolbar.swift in Sources */,
 				1F3DC32E295D992F0003318C /* AmountInputView.swift in Sources */,
+				1F5E4A6C295E1D1800683086 /* CurrencyCacheProtocol.swift in Sources */,
+				1F5E4A6A295E1CEF00683086 /* CurrencyCache.swift in Sources */,
 				1F95643C295CE7BD0028A90A /* UIButton+Localizable.swift in Sources */,
 				1F95641D295CDB090028A90A /* EAViewController.swift in Sources */,
 				1FB4EB0C295E08EF00318D2C /* ExchangeSuccessPresenter.swift in Sources */,
+				1F5E4A73295E210E00683086 /* Time.swift in Sources */,
 				1F3DC317295D05D40003318C /* ExchangeView.swift in Sources */,
 				1FB4EAE5295DDDDD00318D2C /* ExchangeConfirmationModuleBuilder.swift in Sources */,
 				1F5E4A65295E166E00683086 /* Array+Extensions.swift in Sources */,
