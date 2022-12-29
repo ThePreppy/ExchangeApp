@@ -15,6 +15,9 @@ extension AppDelegate {
         
         let currenciesProvider = CurrenciesProvider()
         ServiceLocator.shared.add(service: currenciesProvider)
+        
+        let currencyCache = CurrencyCache()
+        ServiceLocator.shared.add(service: currencyCache)
     }
     
 }

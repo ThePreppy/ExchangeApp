@@ -11,8 +11,10 @@ enum ExchangeModuleBuilder {
     
     static func build() -> UIViewController {
         let networkService = NetworkService()
+        let exchangeRepository = ExchangeRepository(networkService: networkService)
+        
         let router = ExchangeRouter()
-        let interactor = ExchangeInteractor(networkService: networkService)
+        let interactor = ExchangeInteractor(repository: exchangeRepository)
         
         let presenter = ExchangePresenter(
             router: router,

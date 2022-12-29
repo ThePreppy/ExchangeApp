@@ -19,7 +19,15 @@ enum Container {
     
     static var currenciesProvider: CurrenciesProviderProtocol {
         guard let provider: CurrenciesProvider = ServiceLocator.shared.getService() else {
-            fatalError("CurrenciesProviderProtocol should be implement using ServiceLocator")
+            fatalError("CurrenciesProvider should be implement using ServiceLocator")
+        }
+        
+        return provider
+    }
+    
+    static var currencyCache: CurrencyCacheProtocol {
+        guard let provider: CurrencyCache = ServiceLocator.shared.getService() else {
+            fatalError("CurrencyCache should be implement using ServiceLocator")
         }
         
         return provider

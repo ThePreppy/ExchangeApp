@@ -9,12 +9,10 @@ import Foundation
 
 protocol ExchangeInteractorInput: AnyObject {
     
-    init(networkService: NetworkServiceProtocol)
-    
     func fetchCurrencyRate(
         sourceCode: String,
         targetCode: String,
-        amount: String,
+        amount: Int,
         completion: @escaping (Result<CurrencyConversionModel?, Error>) -> Void
     )
     
@@ -22,26 +20,24 @@ protocol ExchangeInteractorInput: AnyObject {
 
 class ExchangeInteractor: ExchangeInteractorInput {
     
-    let networkService: NetworkServiceProtocol
+    let repository: ExchangeRepositoryProtocol
     
-    required init(networkService: NetworkServiceProtocol) {
-        self.networkService = networkService
+    init(repository: ExchangeRepositoryProtocol) {
+        self.repository = repository
     }
     
     func fetchCurrencyRate(
         sourceCode: String,
         targetCode: String,
-        amount: String,
+        amount: Int,
         completion: @escaping (Result<CurrencyConversionModel?, Error>) -> Void
     ) {
-        
-        let endpoint = CurrencyRateEndpoint(
-            source: sourceCode,
-            target: targetCode,
-            amount: amount
+        repository.fetchCurrencyRate(
+            sourceCode: sourceCode,
+            targetCode: targetCode,
+            amount: amount,
+            completion: completion
         )
-        networkService.loadModel(endpoint: endpoint, completion: completion)
-        
     }
     
 }
