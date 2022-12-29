@@ -1,4 +1,22 @@
 
+//MARK: - Common
+"common.done" = "Done";
+"common.ok" = "Ok";
+"common.warning" = "Warning";
+"common.something.went.wrong" = "Something went wrong";
+
 //MARK: - Exchange
 "exchange.navigation.title" = "Exchange App";
 "exchange.calculate" = "Calculate";
+"exchange.amount" = "Amount";
+"exchange.incorrect.amount.error" = "Please enter correct amount";
+
+//MARK: - Exchange Confirmation
+"exchange.confirmation.navigation.title" = "Confirmation";
+"exchange.confirmation.convert" = "Convert";
+"exchange.confirmation.precedes" = "precedes";
+"exchange.confirmation.sec.left" = "sec left";
+"exchange.confirmation.time.expired" = "Conversion time has expired, please try again";
+
+//MARK: - Select currency
+"select_currency.select" = "Select";

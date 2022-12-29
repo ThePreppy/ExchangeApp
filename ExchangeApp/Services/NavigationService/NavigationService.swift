@@ -27,7 +27,7 @@ class NavigationService: NavigationServiceProtocol {
     }
     
     func showMain() {
-        let viewController = ExchangeViewController()
+        let viewController = ExchangeModuleBuilder.build()
         let navigationController = EANavigationController(rootViewController: viewController)
         NavigationControllerDecorator.decorate(navigationController)
         

@@ -10,5 +10,6 @@ import Foundation
 extension TimeInterval {
     
     static let `default`: TimeInterval = 0.4
+    static let fast: TimeInterval = 0.2
     
 }

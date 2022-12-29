@@ -20,7 +20,7 @@ class CurrenciesProvider: CurrenciesProviderProtocol {
     
     func fetchCurrencies(completion: Closure) {
         guard let url else {
-            Logger.error(message: "Currencies.json should be implemented")
+            Logger.error("Currencies.json should be implemented")
             return
         }
         
@@ -32,12 +32,12 @@ class CurrenciesProvider: CurrenciesProviderProtocol {
             completion()
             
         } catch {
-            Logger.error(message: error)
+            Logger.error(error)
         }
     }
     
     func getCurrencies() -> [CurrencyModel] {
-        currencies
+        currencies.filter { $0.code != nil }
     }
     
 }

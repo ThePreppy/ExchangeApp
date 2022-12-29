@@ -17,8 +17,10 @@ struct NavigationControllerDecorator {
         appearance.backgroundColor = AppTheme.primary
         appearance.largeTitleTextAttributes = [.foregroundColor : titleColor]
         appearance.titleTextAttributes = [.foregroundColor : titleColor]
+        appearance.backButtonAppearance.normal.titleTextAttributes = [.foregroundColor : titleColor]
         
         navigationBar.prefersLargeTitles = true
+        navigationBar.tintColor = titleColor
         navigationBar.standardAppearance = appearance
         navigationBar.compactAppearance = appearance
         navigationBar.scrollEdgeAppearance = appearance
