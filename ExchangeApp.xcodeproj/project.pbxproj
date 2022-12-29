@@ -17,6 +17,7 @@
 		1F3DC32A295D29260003318C /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DC329295D29250003318C /* UIStackView+Extensions.swift */; };
 		1F3DC32E295D992F0003318C /* AmountInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DC32C295D992F0003318C /* AmountInputView.swift */; };
 		1F3DC32F295D992F0003318C /* AmountInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DC32D295D992F0003318C /* AmountInputView.xib */; };
+		1F5E4A65295E166E00683086 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5E4A64295E166E00683086 /* Array+Extensions.swift */; };
 		1F629397295CF63C003FFA2C /* EAControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F629396295CF63C003FFA2C /* EAControl.swift */; };
 		1F62939D295CFEED003FFA2C /* CurrencySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F62939B295CFEED003FFA2C /* CurrencySelectionView.swift */; };
 		1F62939E295CFEED003FFA2C /* CurrencySelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F62939C295CFEED003FFA2C /* CurrencySelectionView.xib */; };
@@ -102,6 +103,14 @@
 		1FB4EAF7295DEC2300318D2C /* ExchangeTimerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB4EAF5295DEC2300318D2C /* ExchangeTimerView.xib */; };
 		1FB4EAF9295DEE5B00318D2C /* LineProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB4EAF8295DEE5B00318D2C /* LineProgressView.swift */; };
 		1FB4EAFB295DFE9800318D2C /* Numeric+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB4EAFA295DFE9800318D2C /* Numeric+Extensions.swift */; };
+		1FB4EB04295E08C700318D2C /* ExchangeSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB4EB02295E08C700318D2C /* ExchangeSuccessViewController.swift */; };
+		1FB4EB05295E08C700318D2C /* ExchangeSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB4EB03295E08C700318D2C /* ExchangeSuccessViewController.xib */; };
+		1FB4EB0A295E08EF00318D2C /* ExchangeSuccessInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB4EB06295E08EE00318D2C /* ExchangeSuccessInteractor.swift */; };
+		1FB4EB0B295E08EF00318D2C /* ExchangeSuccessModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB4EB09295E08EF00318D2C /* ExchangeSuccessModuleBuilder.swift */; };
+		1FB4EB0C295E08EF00318D2C /* ExchangeSuccessPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB4EB08295E08EE00318D2C /* ExchangeSuccessPresenter.swift */; };
+		1FB4EB0D295E08EF00318D2C /* ExchangeSuccessRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB4EB07295E08EE00318D2C /* ExchangeSuccessRouter.swift */; };
+		1FB4EB11295E0D1000318D2C /* ExchangeSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB4EB0F295E0D1000318D2C /* ExchangeSuccessView.swift */; };
+		1FB4EB12295E0D1000318D2C /* ExchangeSuccessView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB4EB10295E0D1000318D2C /* ExchangeSuccessView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +141,7 @@
 		1F3DC329295D29250003318C /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
 		1F3DC32C295D992F0003318C /* AmountInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountInputView.swift; sourceTree = "<group>"; };
 		1F3DC32D295D992F0003318C /* AmountInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmountInputView.xib; sourceTree = "<group>"; };
+		1F5E4A64295E166E00683086 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		1F629396295CF63C003FFA2C /* EAControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAControl.swift; sourceTree = "<group>"; };
 		1F62939B295CFEED003FFA2C /* CurrencySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectionView.swift; sourceTree = "<group>"; };
 		1F62939C295CFEED003FFA2C /* CurrencySelectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencySelectionView.xib; sourceTree = "<group>"; };
@@ -221,6 +231,14 @@
 		1FB4EAF5295DEC2300318D2C /* ExchangeTimerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangeTimerView.xib; sourceTree = "<group>"; };
 		1FB4EAF8295DEE5B00318D2C /* LineProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineProgressView.swift; sourceTree = "<group>"; };
 		1FB4EAFA295DFE9800318D2C /* Numeric+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Numeric+Extensions.swift"; sourceTree = "<group>"; };
+		1FB4EB02295E08C700318D2C /* ExchangeSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeSuccessViewController.swift; sourceTree = "<group>"; };
+		1FB4EB03295E08C700318D2C /* ExchangeSuccessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangeSuccessViewController.xib; sourceTree = "<group>"; };
+		1FB4EB06295E08EE00318D2C /* ExchangeSuccessInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeSuccessInteractor.swift; sourceTree = "<group>"; };
+		1FB4EB07295E08EE00318D2C /* ExchangeSuccessRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeSuccessRouter.swift; sourceTree = "<group>"; };
+		1FB4EB08295E08EE00318D2C /* ExchangeSuccessPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeSuccessPresenter.swift; sourceTree = "<group>"; };
+		1FB4EB09295E08EF00318D2C /* ExchangeSuccessModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeSuccessModuleBuilder.swift; sourceTree = "<group>"; };
+		1FB4EB0F295E0D1000318D2C /* ExchangeSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeSuccessView.swift; sourceTree = "<group>"; };
+		1FB4EB10295E0D1000318D2C /* ExchangeSuccessView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangeSuccessView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -417,6 +435,7 @@
 				1FB4EAC6295DBB0400318D2C /* Data+Extensions.swift */,
 				1FB4EAD4295DD33500318D2C /* URLSession+Extensions.swift */,
 				1FB4EAFA295DFE9800318D2C /* Numeric+Extensions.swift */,
+				1F5E4A64295E166E00683086 /* Array+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -424,6 +443,7 @@
 		1F95640F295CD9620028A90A /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				1FB4EB01295E08B700318D2C /* ExchangeSuccess */,
 				1F956427295CE38A0028A90A /* Exchange */,
 				1FB4EADC295DDD8F00318D2C /* ExchangeConfirmation */,
 				1F3DC31E295D16CA0003318C /* Selection */,
@@ -489,6 +509,7 @@
 		1F956438295CE6E20028A90A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1FB4EB0E295E0CFE00318D2C /* ExchangeSuccessView */,
 				1FB4EAF3295DEC0E00318D2C /* ExchangeTimerView */,
 				1FB4EAEE295DE86800318D2C /* ExchangeResultView */,
 				1FB4EAEB295DE4E400318D2C /* LoaderView */,
@@ -633,6 +654,28 @@
 			path = ExchangeTimerView;
 			sourceTree = "<group>";
 		};
+		1FB4EB01295E08B700318D2C /* ExchangeSuccess */ = {
+			isa = PBXGroup;
+			children = (
+				1FB4EB09295E08EF00318D2C /* ExchangeSuccessModuleBuilder.swift */,
+				1FB4EB06295E08EE00318D2C /* ExchangeSuccessInteractor.swift */,
+				1FB4EB07295E08EE00318D2C /* ExchangeSuccessRouter.swift */,
+				1FB4EB08295E08EE00318D2C /* ExchangeSuccessPresenter.swift */,
+				1FB4EB02295E08C700318D2C /* ExchangeSuccessViewController.swift */,
+				1FB4EB03295E08C700318D2C /* ExchangeSuccessViewController.xib */,
+			);
+			path = ExchangeSuccess;
+			sourceTree = "<group>";
+		};
+		1FB4EB0E295E0CFE00318D2C /* ExchangeSuccessView */ = {
+			isa = PBXGroup;
+			children = (
+				1FB4EB0F295E0D1000318D2C /* ExchangeSuccessView.swift */,
+				1FB4EB10295E0D1000318D2C /* ExchangeSuccessView.xib */,
+			);
+			path = ExchangeSuccessView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -742,10 +785,12 @@
 				1F95642E295CE4C90028A90A /* Localizable.strings in Resources */,
 				1FB17E2D295CC5E200FC5571 /* Assets.xcassets in Resources */,
 				1FB4EAF2295DE87D00318D2C /* ExchangeResultView.xib in Resources */,
+				1FB4EB05295E08C700318D2C /* ExchangeSuccessViewController.xib in Resources */,
 				1FB4EAE0295DDDAF00318D2C /* ExchangeConfirmationViewController.xib in Resources */,
 				1FB4EAF7295DEC2300318D2C /* ExchangeTimerView.xib in Resources */,
 				1F9563FA295CCFE40028A90A /* Currencies.json in Resources */,
 				1F95642B295CE39F0028A90A /* ExchangeViewController.xib in Resources */,
+				1FB4EB12295E0D1000318D2C /* ExchangeSuccessView.xib in Resources */,
 				1F62939E295CFEED003FFA2C /* CurrencySelectionView.xib in Resources */,
 				1F956416295CDA170028A90A /* SplashViewController.xib in Resources */,
 				1F3DC32F295D992F0003318C /* AmountInputView.xib in Resources */,
@@ -786,13 +831,16 @@
 				1FB4EAE7295DDDDD00318D2C /* ExchangeConfirmationRouter.swift in Sources */,
 				1FB4EACA295DC58200318D2C /* EAError.swift in Sources */,
 				1F62939D295CFEED003FFA2C /* CurrencySelectionView.swift in Sources */,
+				1FB4EB0D295E08EF00318D2C /* ExchangeSuccessRouter.swift in Sources */,
 				1F956415295CDA170028A90A /* SplashViewController.swift in Sources */,
 				1FB17E24295CC5DE00FC5571 /* AppDelegate.swift in Sources */,
 				1FB4EAC7295DBB0400318D2C /* Data+Extensions.swift in Sources */,
 				1FB4EAF9295DEE5B00318D2C /* LineProgressView.swift in Sources */,
 				1FB4EAEA295DE1F100318D2C /* Loadable.swift in Sources */,
+				1FB4EB04295E08C700318D2C /* ExchangeSuccessViewController.swift in Sources */,
 				1FB4EAD9295DD42800318D2C /* AlertBuilder.swift in Sources */,
 				1FB4EAA1295DA07500318D2C /* ExchangeRouter.swift in Sources */,
+				1FB4EB0A295E08EF00318D2C /* ExchangeSuccessInteractor.swift in Sources */,
 				1FB4EAD1295DCE3B00318D2C /* CurrencyRateEndpoint.swift in Sources */,
 				1FB4EAC5295DB82200318D2C /* NetworkService.swift in Sources */,
 				1F956408295CD5040028A90A /* CurrencyDataModel.swift in Sources */,
@@ -809,8 +857,10 @@
 				1F3DC32E295D992F0003318C /* AmountInputView.swift in Sources */,
 				1F95643C295CE7BD0028A90A /* UIButton+Localizable.swift in Sources */,
 				1F95641D295CDB090028A90A /* EAViewController.swift in Sources */,
+				1FB4EB0C295E08EF00318D2C /* ExchangeSuccessPresenter.swift in Sources */,
 				1F3DC317295D05D40003318C /* ExchangeView.swift in Sources */,
 				1FB4EAE5295DDDDD00318D2C /* ExchangeConfirmationModuleBuilder.swift in Sources */,
+				1F5E4A65295E166E00683086 /* Array+Extensions.swift in Sources */,
 				1FB4EAD7295DD3D100318D2C /* ErrorRepresentable.swift in Sources */,
 				1FB4EABF295DB82200318D2C /* RequestHeader.swift in Sources */,
 				1F956406295CD43C0028A90A /* CurrenciesProviderProtocol.swift in Sources */,
@@ -838,7 +888,9 @@
 				1F3DC31B295D10820003318C /* Observable.swift in Sources */,
 				1F95643A295CE6F10028A90A /* PrimaryButton.swift in Sources */,
 				1F9563E8295CC8000028A90A /* Constants.swift in Sources */,
+				1FB4EB11295E0D1000318D2C /* ExchangeSuccessView.swift in Sources */,
 				1FB4EAE6295DDDDD00318D2C /* ExchangeConfirmationInteractor.swift in Sources */,
+				1FB4EB0B295E08EF00318D2C /* ExchangeSuccessModuleBuilder.swift in Sources */,
 				1FB4EADF295DDDAF00318D2C /* ExchangeConfirmationViewController.swift in Sources */,
 				1FB4EABD295DB82200318D2C /* RequestParameters.swift in Sources */,
 				1F9563F5295CCA9E0028A90A /* AppDelegate+Extensions.swift in Sources */,

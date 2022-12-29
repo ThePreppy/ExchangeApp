@@ -8,8 +8,12 @@
 import Foundation
 
 protocol ExchangeConfirmationPresenterInput: AnyObject {
+    
     var exchangeResultModel: ExchangeResultView.Model { get }
     var exchangeTimerModel: ExchangeTimerView.Model { get }
+    
+    func convert()
+    
 }
 
 class ExchangeConfirmationPresenter: ExchangeConfirmationPresenterInput {
@@ -45,6 +49,18 @@ class ExchangeConfirmationPresenter: ExchangeConfirmationPresenterInput {
         )
         
         configure()
+    }
+    
+    func convert() {
+        timer.invalidate()
+        
+        let parameters = ExchangeSuccessParameters(
+            targetCurrency: parameters.targetCurrency.code ?? "",
+            conversionRate: parameters.conversionRate,
+            conversionResult: parameters.conversionResult
+        )
+        
+        router.showSuccessScreen(parameters: parameters)
     }
     
     //MARK: - Private Functions

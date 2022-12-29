@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ExchangeConfirmationInteractorInput {
+protocol ExchangeConfirmationInteractorInput: AnyObject {
     
 }
 
