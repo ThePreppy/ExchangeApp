@@ -37,7 +37,7 @@ class CurrenciesProvider: CurrenciesProviderProtocol {
     }
     
     func getCurrencies() -> [CurrencyModel] {
-        currencies.filter { $0.code != nil }
+        currencies.filter { $0.code != nil }.removingDuplicates()
     }
     
 }

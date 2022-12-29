@@ -10,6 +10,7 @@ import UIKit
 protocol ExchangeConfirmationRouterInput: AnyObject {
     
     func showTimeExpiredAlert()
+    func showSuccessScreen(parameters: ExchangeSuccessParameters)
     
 }
 
@@ -26,6 +27,14 @@ class ExchangeConfirmationRouter: ExchangeConfirmationRouterInput {
             .build()
         
         viewController?.present(alertViewController, animated: true)
+    }
+    
+    func showSuccessScreen(parameters: ExchangeSuccessParameters) {
+        let exchangeSuccessViewController = ExchangeSuccessModuleBuilder.build(with: parameters)
+        
+        viewController?
+            .navigationController?
+            .pushViewController(exchangeSuccessViewController, animated: true)
     }
     
 }

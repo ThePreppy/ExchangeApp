@@ -31,3 +31,7 @@ extension CurrencyModel: Selectable {
     }
     
 }
+
+extension CurrencyModel: Equatable {
+    
+}

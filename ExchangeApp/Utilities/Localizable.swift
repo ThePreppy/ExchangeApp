@@ -28,11 +28,20 @@ enum Localizable: String {
     case exchange_confirmation_sec_left = "exchange.confirmation.sec.left"
     case exchange_confirmation_time_expired = "exchange.confirmation.time.expired"
     
+    //MARK: - Exchange Success
+    case exchange_success_navigation_title = "exchange.success.navigation.title"
+    case exchange_success_title_message = "exchange.success.title.message"
+    case exchange_success_subtitle_message = "exchange.success.subtitle.message"
+    
     //MARK: - Select currency
     case select_currency_select = "select_currency.select"
     
     func localize() -> String {
         NSLocalizedString(rawValue, comment: "")
+    }
+    
+    func localized(arguments: CVarArg...) -> String {
+        .localizedStringWithFormat(localize(), arguments)
     }
     
 }

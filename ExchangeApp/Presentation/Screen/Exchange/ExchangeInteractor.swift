@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ExchangeInteractorInput {
+protocol ExchangeInteractorInput: AnyObject {
     
     init(networkService: NetworkServiceProtocol)
     
