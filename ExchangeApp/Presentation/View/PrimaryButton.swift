@@ -22,7 +22,6 @@ class PrimaryButton: EAButton {
         clipsToBounds = true
         backgroundColor = AppTheme.primary
         setTitleColor(AppTheme.white, for: .normal)
-        setTitleColor(AppTheme.white.withAlphaComponent(0.7), for: .highlighted)
         titleLabel?.font = .systemFont(ofSize: 16, weight: .semibold)
     }
     

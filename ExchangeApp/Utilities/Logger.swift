@@ -8,9 +8,13 @@
 import Foundation
 
 enum Logger {
+
+    static func log(_ message: Any) {
+        print(message)
+    }
     
     static func info(
-        message: Any,
+        _ message: Any,
         file: String = #file,
         line: Int = #line
     ) {
@@ -19,7 +23,7 @@ enum Logger {
     }
     
     static func error(
-        message: Any,
+        _ message: Any,
         file: String = #file,
         line: Int = #line
     ) {

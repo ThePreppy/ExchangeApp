@@ -17,10 +17,11 @@ enum Constants {
         
         enum Name {
             static let currencies: String = "Currencies"
+            static let constants: String = "Constants"
         }
         
         static let json: String = "json"
-        
+        static let plist: String = "plist"
     }
     
 }

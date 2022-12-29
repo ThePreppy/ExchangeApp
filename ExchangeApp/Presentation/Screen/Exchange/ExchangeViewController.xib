@@ -10,7 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExchangeViewController" customModule="ExchangeApp" customModuleProvider="target">
             <connections>
+                <outlet property="amountInputView" destination="Wbo-EN-DJC" id="JTS-1x-JLG"/>
                 <outlet property="calculateButton" destination="TFs-qy-9VP" id="pai-aP-cd6"/>
+                <outlet property="exchangeView" destination="6Vl-iK-jjW" id="W9j-mL-NkV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,23 +26,42 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="Q8a-HW-xA9"/>
                     </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
                 </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oBf-Fa-xeK">
+                    <rect key="frame" x="16" y="329.66666666666669" width="361" height="130"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Vl-iK-jjW" customClass="ExchangeView" customModule="ExchangeApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="WbY-it-8oS"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="60" translatesAutoresizingMaskIntoConstraints="NO" id="Wbo-EN-DJC" customClass="AmountInputView" customModule="ExchangeApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="70" width="361" height="60"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="oBf-Fa-xeK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="QUw-Pa-uL3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oBf-Fa-xeK" secondAttribute="trailing" constant="16" id="Sap-Oz-flJ"/>
+                <constraint firstItem="oBf-Fa-xeK" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="0.9" id="VJK-So-tIq"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TFs-qy-9VP" secondAttribute="trailing" constant="16" id="amF-lw-LBe"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="TFs-qy-9VP" secondAttribute="bottom" constant="20" id="l64-my-Atv"/>
+                <constraint firstItem="oBf-Fa-xeK" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="lxc-uC-hPB"/>
                 <constraint firstItem="TFs-qy-9VP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="zs9-cd-XSg"/>
             </constraints>
-            <point key="canvasLocation" x="88" y="42"/>
+            <point key="canvasLocation" x="87.786259541984734" y="41.549295774647888"/>
         </view>
     </objects>
     <designables>
         <designable name="TFs-qy-9VP">
-            <size key="intrinsicContentSize" width="75" height="34.333333333333336"/>
+            <size key="intrinsicContentSize" width="46" height="30"/>
         </designable>
     </designables>
     <resources>

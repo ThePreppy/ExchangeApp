@@ -13,6 +13,10 @@ protocol Domainable {
     func mapToModel() -> Model
 }
 
+protocol ResponseDomainable: Decodable, Domainable {
+    
+}
+
 extension Collection where Element: Domainable {
     
     func mapToModels() -> [Element.Model] {
