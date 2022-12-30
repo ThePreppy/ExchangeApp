@@ -10,14 +10,7 @@ import Foundation
 extension AppDelegate {
     
     func configureContainer() {
-        let navigationService = NavigationService()
-        ServiceLocator.shared.add(service: navigationService)
-        
-        let currenciesProvider = CurrenciesProvider()
-        ServiceLocator.shared.add(service: currenciesProvider)
-        
-        let currencyCache = CurrencyCache()
-        ServiceLocator.shared.add(service: currencyCache)
+        Container.setup()
     }
     
 }

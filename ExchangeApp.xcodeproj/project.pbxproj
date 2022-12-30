@@ -63,8 +63,6 @@
 		1FB17E2D295CC5E200FC5571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB17E2C295CC5E200FC5571 /* Assets.xcassets */; };
 		1FB17E30295CC5E200FC5571 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB17E2E295CC5E200FC5571 /* LaunchScreen.storyboard */; };
 		1FB17E3B295CC5E300FC5571 /* ExchangeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB17E3A295CC5E300FC5571 /* ExchangeAppTests.swift */; };
-		1FB17E45295CC5E300FC5571 /* ExchangeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB17E44295CC5E300FC5571 /* ExchangeAppUITests.swift */; };
-		1FB17E47295CC5E300FC5571 /* ExchangeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB17E46295CC5E300FC5571 /* ExchangeAppUITestsLaunchTests.swift */; };
 		1FB4EA97295D9AFF00318D2C /* DoneToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB4EA96295D9AFF00318D2C /* DoneToolbar.swift */; };
 		1FB4EA9B295D9E0600318D2C /* EATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB4EA9A295D9E0600318D2C /* EATextField.swift */; };
 		1FB4EA9D295D9E7900318D2C /* UILabel+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB4EA9C295D9E7900318D2C /* UILabel+Localizable.swift */; };
@@ -122,13 +120,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		1FB17E37295CC5E300FC5571 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1FB17E18295CC5DE00FC5571 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1FB17E1F295CC5DE00FC5571;
-			remoteInfo = ExchangeApp;
-		};
-		1FB17E41295CC5E300FC5571 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1FB17E18295CC5DE00FC5571 /* Project object */;
 			proxyType = 1;
@@ -197,9 +188,6 @@
 		1FB17E31295CC5E200FC5571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FB17E36295CC5E300FC5571 /* ExchangeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB17E3A295CC5E300FC5571 /* ExchangeAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeAppTests.swift; sourceTree = "<group>"; };
-		1FB17E40295CC5E300FC5571 /* ExchangeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FB17E44295CC5E300FC5571 /* ExchangeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeAppUITests.swift; sourceTree = "<group>"; };
-		1FB17E46295CC5E300FC5571 /* ExchangeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1FB4EA96295D9AFF00318D2C /* DoneToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneToolbar.swift; sourceTree = "<group>"; };
 		1FB4EA9A295D9E0600318D2C /* EATextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EATextField.swift; sourceTree = "<group>"; };
 		1FB4EA9C295D9E7900318D2C /* UILabel+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Localizable.swift"; sourceTree = "<group>"; };
@@ -264,13 +252,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1FB17E33295CC5E300FC5571 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1FB17E3D295CC5E300FC5571 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -571,7 +552,6 @@
 			children = (
 				1FB17E22295CC5DE00FC5571 /* ExchangeApp */,
 				1FB17E39295CC5E300FC5571 /* ExchangeAppTests */,
-				1FB17E43295CC5E300FC5571 /* ExchangeAppUITests */,
 				1FB17E21295CC5DE00FC5571 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -581,7 +561,6 @@
 			children = (
 				1FB17E20295CC5DE00FC5571 /* ExchangeApp.app */,
 				1FB17E36295CC5E300FC5571 /* ExchangeAppTests.xctest */,
-				1FB17E40295CC5E300FC5571 /* ExchangeAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -607,15 +586,6 @@
 				1FB17E3A295CC5E300FC5571 /* ExchangeAppTests.swift */,
 			);
 			path = ExchangeAppTests;
-			sourceTree = "<group>";
-		};
-		1FB17E43295CC5E300FC5571 /* ExchangeAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1FB17E44295CC5E300FC5571 /* ExchangeAppUITests.swift */,
-				1FB17E46295CC5E300FC5571 /* ExchangeAppUITestsLaunchTests.swift */,
-			);
-			path = ExchangeAppUITests;
 			sourceTree = "<group>";
 		};
 		1FB4EAAE295DB81500318D2C /* NetworkService */ = {
@@ -759,24 +729,6 @@
 			productReference = 1FB17E36295CC5E300FC5571 /* ExchangeAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1FB17E3F295CC5E300FC5571 /* ExchangeAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1FB17E50295CC5E300FC5571 /* Build configuration list for PBXNativeTarget "ExchangeAppUITests" */;
-			buildPhases = (
-				1FB17E3C295CC5E300FC5571 /* Sources */,
-				1FB17E3D295CC5E300FC5571 /* Frameworks */,
-				1FB17E3E295CC5E300FC5571 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1FB17E42295CC5E300FC5571 /* PBXTargetDependency */,
-			);
-			name = ExchangeAppUITests;
-			productName = ExchangeAppUITests;
-			productReference = 1FB17E40295CC5E300FC5571 /* ExchangeAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -791,10 +743,6 @@
 						CreatedOnToolsVersion = 14.1;
 					};
 					1FB17E35295CC5E300FC5571 = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = 1FB17E1F295CC5DE00FC5571;
-					};
-					1FB17E3F295CC5E300FC5571 = {
 						CreatedOnToolsVersion = 14.1;
 						TestTargetID = 1FB17E1F295CC5DE00FC5571;
 					};
@@ -815,7 +763,6 @@
 			targets = (
 				1FB17E1F295CC5DE00FC5571 /* ExchangeApp */,
 				1FB17E35295CC5E300FC5571 /* ExchangeAppTests */,
-				1FB17E3F295CC5E300FC5571 /* ExchangeAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -844,13 +791,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1FB17E34295CC5E300FC5571 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1FB17E3E295CC5E300FC5571 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -968,15 +908,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1FB17E3C295CC5E300FC5571 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1FB17E45295CC5E300FC5571 /* ExchangeAppUITests.swift in Sources */,
-				1FB17E47295CC5E300FC5571 /* ExchangeAppUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -984,11 +915,6 @@
 			isa = PBXTargetDependency;
 			target = 1FB17E1F295CC5DE00FC5571 /* ExchangeApp */;
 			targetProxy = 1FB17E37295CC5E300FC5571 /* PBXContainerItemProxy */;
-		};
-		1FB17E42295CC5E300FC5571 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1FB17E1F295CC5DE00FC5571 /* ExchangeApp */;
-			targetProxy = 1FB17E41295CC5E300FC5571 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1218,40 +1144,6 @@
 			};
 			name = Release;
 		};
-		1FB17E51295CC5E300FC5571 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.oleksandr.gerega.exchangeapp.ExchangeAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ExchangeApp;
-			};
-			name = Debug;
-		};
-		1FB17E52295CC5E300FC5571 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.oleksandr.gerega.exchangeapp.ExchangeAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ExchangeApp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1278,15 +1170,6 @@
 			buildConfigurations = (
 				1FB17E4E295CC5E300FC5571 /* Debug */,
 				1FB17E4F295CC5E300FC5571 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1FB17E50295CC5E300FC5571 /* Build configuration list for PBXNativeTarget "ExchangeAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1FB17E51295CC5E300FC5571 /* Debug */,
-				1FB17E52295CC5E300FC5571 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
