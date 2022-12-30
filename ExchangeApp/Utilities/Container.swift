@@ -9,6 +9,17 @@ import Foundation
 
 enum Container {
     
+    static func setup() {
+        let navigationService = NavigationService()
+        ServiceLocator.shared.add(service: navigationService)
+        
+        let currenciesProvider = CurrenciesProvider()
+        ServiceLocator.shared.add(service: currenciesProvider)
+        
+        let currencyCache = CurrencyCache()
+        ServiceLocator.shared.add(service: currencyCache)
+    }
+    
     static var navigationService: NavigationServiceProtocol {
         guard let navigationService: NavigationService = ServiceLocator.shared.getService() else {
             fatalError("NavigationService should be implement using ServiceLocator")
